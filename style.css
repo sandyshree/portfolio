@@ -379,18 +379,27 @@ width:0;
 .pro:hover{
     transform:translateY(-5px);
 }
-.img-flex{
-    display:flex;
-    gap:10px;
-    padding:20px;
+.img-flex {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
 }
 
-.img-flex img{
-    width:50%;
-    height:160px;
-    object-fit:contain;   /* 🔥 FULL IMAGE visible */
-    background:#f1f5f9;
-    border-radius:8px;
+.img-flex img {
+  width: 50%;
+  height: 160px;
+  object-fit: contain;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .img-flex {
+    flex-direction: column;
+  }
+
+  .img-flex img {
+    width: 100%;
+  }
 }
 
 .pro h3{
